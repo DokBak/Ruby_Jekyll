@@ -1,0 +1,29 @@
+---
+title : index04
+---
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> {{ page.title }} </title>
+  </head>
+  <body>
+    <h1>URL : http://localhost:4000/test/index04</h1>
+    <hr>
+    <h2>사용법</h2>
+      {% include head4.html %}
+    <hr>
+    <h2>주요 내용</h2>
+    _includes 폴더의 공통적인 html을 추가하고 사용하는 방법
+    <hr>
+    <h2>설명</h2>
+    1. 프로젝트 루트 폴더에 _includes폴더를 만들고 그 내부에 head4.html 파일 작성<br>
+    2. head4.html에 내용 작성<br>
+    3. 프로젝트 루트 폴더에 test폴더를 만들고 그 내부에 index04.html 파일 작성<br>
+    4. index04.html에 추가하고 싶은 부분에 _include/head4.html 내용을 추가.<br>
+    <hr>
+    <h2>컴파일 후 생성 구조</h2>
+    _site/test/index04.html
+    <hr>
+  </body>
+</html>
